@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pinkmonun"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="350dp"
+        android:background="@drawable/title_white_btn"
+        android:orientation="vertical">
+        <!--닫기버튼 삭제??
+        LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textSize="56dp"
+                android:fontFamily="@font/typo_crayon_l"
+                android:textColor="@color/grey"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="90dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_b"
+                android:text="제목"
+                android:textColor="@color/grey"
+                android:layout_marginRight="20dp"
+                android:textSize="58sp"></TextView>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="500dp"
+                android:layout_height="100dp"
+                android:background="@drawable/text_grey_rec"
+                android:hint="제목을 입력하세요"
+                android:textColorHint="@color/white"
+                android:textSize="48dp"
+                android:gravity="center"
+                android:fontFamily="@font/typo_crayon_l"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+            <ImageButton
+                android:id="@+id/sendBtn"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="@drawable/first_sentence_btn"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="입력"
+                android:textColor="@color/white"
+                android:fontFamily="@font/typo_crayon_l"
+                android:textSize="40dp"
+                android:layout_alignLeft="@+id/sendBtn"
+                android:layout_alignTop="@+id/sendBtn"
+                android:layout_alignRight="@+id/sendBtn"
+                android:layout_alignBottom="@+id/sendBtn"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

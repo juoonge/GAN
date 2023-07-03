@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType = "fitXY"
+            android:alpha="0.5" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_btn_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="125sp"
+                android:fontFamily="@font/typo_crayon_b"
+                android:textColor="@color/black"
+                android:layout_marginTop="210dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/playingBtn"
+                        android:layout_width="220dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/playing_btn"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="플레이"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/typo_crayon_b"
+                        android:textSize="55dp"
+                        android:layout_alignLeft="@+id/playingBtn"
+                        android:layout_alignTop="@+id/playingBtn"
+                        android:layout_alignRight="@+id/playingBtn"
+                        android:layout_alignBottom="@+id/playingBtn"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <ImageButton
+                        android:id="@+id/playingEngBtn"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/playing_eng_btn"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="영어공부"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/typo_crayon_b"
+                        android:textSize="55dp"
+                        android:layout_alignLeft="@+id/playingEngBtn"
+                        android:layout_alignTop="@+id/playingEngBtn"
+                        android:layout_alignRight="@+id/playingEngBtn"
+                        android:layout_alignBottom="@+id/playingEngBtn"/>
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/changeBtn"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/change_btn"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="수정"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/typo_crayon_b"
+                        android:textSize="55dp"
+                        android:layout_alignLeft="@+id/changeBtn"
+                        android:layout_alignTop="@+id/changeBtn"
+                        android:layout_alignRight="@+id/changeBtn"
+                        android:layout_alignBottom="@+id/changeBtn"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <ImageButton
+                        android:id="@+id/deleteBtn"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/delete_btn"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="삭제"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/typo_crayon_b"
+                        android:textSize="55dp"
+                        android:layout_alignLeft="@+id/deleteBtn"
+                        android:layout_alignTop="@+id/deleteBtn"
+                        android:layout_alignRight="@+id/deleteBtn"
+                        android:layout_alignBottom="@+id/deleteBtn"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

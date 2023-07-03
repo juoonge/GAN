@@ -1,0 +1,333 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pinkmonun"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_btn_blue"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_heart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="133300-popular-heart.json"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            app:lottie_loop="true"
+            app:lottie_speed="0.7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/typo_crayon_m"
+            android:text="첫 문장과 그림체 선택을 토대로 그림이 생성돼요!"
+            android:textColor="@color/setting"
+            android:layout_marginTop="98dp"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="240dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/white_rec"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ 첫문장 입력 ]"
+            android:textSize="35dp"
+            android:fontFamily="@font/typo_crayon_m"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart= "390dp" />
+
+
+        <ImageView
+            android:id="@+id/sentenceBox"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/text_grey_rec"
+            android:layout_alignLeft="@+id/firstSentence"
+            android:layout_alignTop="@+id/firstSentence"
+            android:layout_alignRight="@+id/firstSentence"
+            android:layout_alignBottom="@+id/firstSentence"/>
+
+        <EditText
+            android:id="@+id/firstSentence"
+            android:layout_width="760dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="80dp"
+            android:autoSizeStepGranularity="5dp"
+            android:autoSizeTextType="uniform"
+            android:background="@null"
+            android:fontFamily="@font/typo_crayon_l"
+            android:gravity="center"
+            android:hint="문장을 입력하세요"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:maxLines="2"
+            android:textSize="36dp" />
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:background="@drawable/first_sentence_btn"
+            android:layout_marginEnd="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="입력"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="28dp"
+            android:layout_alignLeft="@+id/sendBtn"
+            android:layout_alignTop="@+id/sendBtn"
+            android:layout_alignRight="@+id/sendBtn"
+            android:layout_alignBottom="@+id/sendBtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ AI와 같이 만들기 ]"
+            android:textSize="32dp"
+            android:fontFamily="@font/typo_crayon_m"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="150dp"/>
+
+
+        <ImageView
+            android:id="@+id/keywordBox"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/keyword"
+            android:layout_alignLeft="@+id/keyword"
+            android:layout_alignTop="@+id/keyword"
+            android:layout_alignRight="@+id/keyword"
+            android:layout_alignBottom="@+id/keyword"/>
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="300dp"
+            android:autoSizeStepGranularity="1dp"
+            android:autoSizeTextType="uniform"
+            android:background="@null"
+            android:fontFamily="@font/typo_crayon_l"
+            android:gravity="center"
+            android:hint="주인공"
+            android:padding="20dp"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:textSize="32dp" />
+
+        <ImageButton
+            android:id="@+id/recommend"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/first_sentence_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginBottom="60dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="AI 추천받기"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="25dp"
+            android:layout_alignLeft="@+id/recommend"
+            android:layout_alignTop="@+id/recommend"
+            android:layout_alignRight="@+id/recommend"
+            android:layout_alignBottom="@+id/recommend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ 그림체 선택 ]"
+            android:textSize="32dp"
+            android:fontFamily="@font/typo_crayon_m"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="650dp"/>
+
+        <ImageButton
+            android:id="@+id/fantasyArt"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/recommend_ai"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="530dp"
+            android:layout_marginBottom="135dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="판타지"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/fantasyArt"
+            android:layout_alignTop="@+id/fantasyArt"
+            android:layout_alignRight="@+id/fantasyArt"
+            android:layout_alignBottom="@+id/fantasyArt"/>
+        <ImageButton
+            android:id="@+id/isometric"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/drawing_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="530dp"
+            android:layout_marginBottom="55dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="그림"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/isometric"
+            android:layout_alignTop="@+id/isometric"
+            android:layout_alignRight="@+id/isometric"
+            android:layout_alignBottom="@+id/isometric"/>
+
+        <ImageButton
+            android:id="@+id/comicBook"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/drawing_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="680dp"
+            android:layout_marginBottom="135dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="만화"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/comicBook"
+            android:layout_alignTop="@+id/comicBook"
+            android:layout_alignRight="@+id/comicBook"
+            android:layout_alignBottom="@+id/comicBook"/>
+
+        <ImageButton
+            android:id="@+id/cinematic"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/drawing_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="680dp"
+            android:layout_marginBottom="55dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="영화"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/cinematic"
+            android:layout_alignTop="@+id/cinematic"
+            android:layout_alignRight="@+id/cinematic"
+            android:layout_alignBottom="@+id/cinematic"/>
+
+
+        <ImageButton
+            android:id="@+id/anime"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/drawing_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="830dp"
+            android:layout_marginBottom="135dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="애니"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/anime"
+            android:layout_alignTop="@+id/anime"
+            android:layout_alignRight="@+id/anime"
+            android:layout_alignBottom="@+id/anime"/>
+        <ImageButton
+            android:id="@+id/origami"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:background="@drawable/drawing_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="830dp"
+            android:layout_marginBottom="55dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="종이접기"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="24dp"
+            android:layout_alignLeft="@+id/origami"
+            android:layout_alignTop="@+id/origami"
+            android:layout_alignRight="@+id/origami"
+            android:layout_alignBottom="@+id/origami"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:ignore="MissingClass"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

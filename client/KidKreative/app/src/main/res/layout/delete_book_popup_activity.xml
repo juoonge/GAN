@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/delete_background"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Notice -->
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popupTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/typo_crayon_l"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/delete_title"
+                android:textSize="40sp" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:text=" 을(를)"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/typo_crayon_l"
+             />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="삭제하시겠습니까?"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="@font/typo_crayon_l"/>
+    </LinearLayout>
+    <!-- Notice -->
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/okBtn"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@drawable/delete_popup_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="100dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="예"
+                android:textColor="@color/white"
+                android:fontFamily="@font/typo_crayon_b"
+                android:textSize="30dp"
+                android:layout_alignLeft="@+id/okBtn"
+                android:layout_alignTop="@+id/okBtn"
+                android:layout_alignRight="@+id/okBtn"
+                android:layout_alignBottom="@+id/okBtn"/>
+            <ImageButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@drawable/delete_popup_btn"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="150dp"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="아니요"
+                android:textColor="@color/white"
+                android:fontFamily="@font/typo_crayon_b"
+                android:textSize="30dp"
+                android:layout_alignLeft="@+id/cancelBtn"
+                android:layout_alignTop="@+id/cancelBtn"
+                android:layout_alignRight="@+id/cancelBtn"
+                android:layout_alignBottom="@+id/cancelBtn"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</RelativeLayout>

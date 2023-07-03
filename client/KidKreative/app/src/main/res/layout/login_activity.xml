@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_btn_green"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:fontFamily="@font/typo_crayon_l"
+            android:gravity="center"
+            android:hint="아이디"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="50dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="50dp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="110dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/login_btn"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@drawable/green_send_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="360dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="start"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_b"
+            android:textSize="80dp"
+            android:layout_alignLeft="@+id/login_btn"
+            android:layout_alignTop="@+id/login_btn"
+            android:layout_alignRight="@+id/login_btn"
+            android:layout_alignBottom="@+id/login_btn"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right">
+
+        <ImageButton
+            android:id="@+id/setting_btn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/setting_btn"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="65dp">
+        <ImageButton
+            android:id="@+id/makeBtn"
+            android:layout_width="650dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:background="@drawable/main_makestory_btn"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/makeBtn"
+            android:layout_alignTop="@+id/makeBtn"
+            android:layout_alignRight="@+id/makeBtn"
+            android:layout_alignBottom="@+id/makeBtn"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/typo_crayon_m"
+            android:gravity="center"
+            android:text="동화책 만들기"
+            android:textColor="@color/white"
+            android:textSize="76dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="210dp">
+        <ImageButton
+            android:id="@+id/storage_btn"
+            android:layout_width="650dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:background="@drawable/main_storage_btn"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="보관함"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_m"
+            android:textSize="76dp"
+            android:layout_alignLeft="@+id/storage_btn"
+            android:layout_alignTop="@+id/storage_btn"
+            android:layout_alignRight="@+id/storage_btn"
+            android:layout_alignBottom="@+id/storage_btn"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_arrow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="80555-arrow-down.json"
+            app:lottie_loop="true"
+            app:lottie_speed="0.4"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="430dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/typo_crayon_m"
+            android:text="제목, 내용, 그림 수정 가능!"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

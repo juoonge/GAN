@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "fitXY"
+        android:alpha="0.3"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_btn_blue"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="제목"
+        android:textColor="@color/black"
+        android:fontFamily="@font/typo_crayon_b"
+        android:background="@null"
+        android:textSize="85dp"/>
+
+    <ImageButton
+        android:id="@+id/change_btn"
+        android:layout_marginTop="120dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/title_change_btn"
+        android:layout_toRightOf="@+id/title"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/change_btn"
+        android:layout_alignTop="@+id/change_btn"
+        android:layout_alignRight="@+id/change_btn"
+        android:layout_alignBottom="@+id/change_btn"
+        android:fontFamily="@font/typo_crayon_l"
+        android:gravity="center"
+        android:text="저장"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp">
+
+        <GridLayout
+            android:layout_gravity="center"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story1"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/check1"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story2"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >  </ImageView>
+                <ImageView
+                    android:id="@+id/check2"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story3"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/check3"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story4"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/check4"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story5"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/check5"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/story6"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:onClick="onClick"
+                    >
+                </ImageView>
+                <ImageView
+                    android:id="@+id/check6"
+                    android:layout_width="210dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check"
+                    >
+                </ImageView>
+            </RelativeLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+

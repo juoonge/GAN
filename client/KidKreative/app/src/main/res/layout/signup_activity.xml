@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/join_background"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_btn_green"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:fontFamily="@font/typo_crayon_l"
+            android:gravity="center"
+            android:hint="아이디"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="50dp"/>
+
+
+        <ImageButton
+            android:id="@+id/id_check_btn"
+            android:layout_marginLeft="100dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/yellow_green_btn"
+            android:layout_toRightOf="@id/id"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_b"
+            android:textSize="28dp"
+            android:layout_alignLeft="@+id/id_check_btn"
+            android:layout_alignTop="@+id/id_check_btn"
+            android:layout_alignRight="@+id/id_check_btn"
+            android:layout_alignBottom="@+id/id_check_btn"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="50dp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+
+        <EditText
+            android:id="@+id/check_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="비밀번호 확인"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="50dp"
+            android:background="@null"
+            android:layout_marginTop="160dp"/>
+
+        <EditText
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
+            android:hint="닉네임"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="50dp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"/>
+
+        <ImageButton
+            android:id="@+id/join_btn"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:background="@drawable/green_send_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="완료"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/typo_crayon_b"
+            android:textSize="60dp"
+            android:layout_alignLeft="@+id/join_btn"
+            android:layout_alignTop="@+id/join_btn"
+            android:layout_alignRight="@+id/join_btn"
+            android:layout_alignBottom="@+id/join_btn"/>
+    </RelativeLayout>
+</LinearLayout>

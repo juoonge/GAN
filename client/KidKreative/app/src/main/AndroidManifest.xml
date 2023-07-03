@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GAN_Image"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ChangeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ClickBookActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ContentChangeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".EndingPlayingActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".EndingPlayingEnglishActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".FirstSentenceActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".LogoutActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MakingImageActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".NextSentenceActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".NicknameChangeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PlayingEnglishActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PlayingStoryActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".SettingActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".SignupActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".StartActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".StorageBoxActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TitleChangeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TitlePopupActivity"
+            android:screenOrientation="landscape"/>
+
+
+    </application>
+
+</manifest>

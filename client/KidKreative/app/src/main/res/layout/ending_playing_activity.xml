@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "fitXY"
+        android:alpha="0.5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp">
+
+            <ImageButton
+                android:id="@+id/replayBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_background"
+                android:backgroundTint="#CCFFFFFF"
+                />
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/replay_btn"
+                android:layout_marginTop="50dp"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="다시보기"
+                android:textSize="80sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/typo_crayon_b"></TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"></TextView>
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp">
+
+            <ImageButton
+                android:id="@+id/exitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_background"
+                android:backgroundTint="#CCFFFFFF"
+                />
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/exit_btn"
+                android:layout_marginTop="50dp"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="나가기"
+                android:textSize="80sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/typo_crayon_b"></TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

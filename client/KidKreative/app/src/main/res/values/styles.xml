@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="warningToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stFont">@font/write1</item>
+        <item name="stTextSize">30sp</item>
+        <item name="stColorBackground">#FB3B3B</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#E91E63</item>
+        <item name="stIconStart">@drawable/crying</item>
+        <item name="stIconEnd">@drawable/crying</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">center</item> top or center
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="lastpageToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stFont">@font/write1</item>
+        <item name="stTextSize">30sp</item>
+        <item name="stColorBackground">#008837</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#0F935E</item>
+        <item name="stIconEnd">@drawable/raisedhand</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">center</item> top or center
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="firstpageToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stFont">@font/write1</item>
+        <item name="stTextSize">30sp</item>
+        <item name="stColorBackground">#008837</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#0F935E</item>
+        <item name="stIconStart">@drawable/raisedhand</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">center</item> top or center
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="changeToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stFont">@font/write1</item>
+        <item name="stTextSize">30sp</item>
+        <item name="stColorBackground">#008837</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#0F935E</item>
+        <item name="stIconStart">@drawable/party</item>
+        <item name="stIconEnd">@drawable/party</item>
+        <item name="stLength">SHORT</item> LONG or SHORT
+        <item name="stGravity">center</item> top or center
+        <item name="stRadius">20dp</item>
+    </style>
+</resources>

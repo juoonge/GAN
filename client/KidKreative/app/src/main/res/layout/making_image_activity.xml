@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/pinkmonun"
+    >
+
+    <!--RelativeLayout
+        android:layout_width="720dp"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/white_background"
+            />
+        <ImageView
+            android:id="@+id/image2000"
+            android:layout_height="480dp"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            />
+
+
+
+
+    </RelativeLayout-->
+    <RelativeLayout
+        android:layout_width="720dp"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/white_background"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="133300-popular-heart.json"
+            app:lottie_loop="true"
+            app:lottie_speed="0.5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="StabilityAI가 그림을 생성 중입니다!"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/setting"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="35dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:ignore="MissingClass"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="10dp"
+        android:background="@drawable/line"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="730dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/x"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="85dp"
+            >
+            <TextView
+                android:id="@+id/currentPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:textSize="55dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:text="/"
+                android:textSize="55dp"/>
+            <TextView
+                android:id="@+id/allPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:textSize="55dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="565dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:padding="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="@drawable/making_story_white_rec"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/sentence"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fontFamily="@font/typo_crayon_l"
+                android:text=""
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="40sp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="30dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+                <ImageButton
+                    android:id="@+id/nextBtn"
+                    android:layout_width="400dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/end_btn"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="다음 페이지"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/typo_crayon_m"
+                    android:textSize="40dp"
+                    android:layout_alignLeft="@+id/nextBtn"
+                    android:layout_alignTop="@+id/nextBtn"
+                    android:layout_alignRight="@+id/nextBtn"
+                    android:layout_alignBottom="@+id/nextBtn"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+                <ImageButton
+                    android:id="@+id/endBtn"
+                    android:layout_width="400dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/next_page_btn"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="끝내기"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/typo_crayon_m"
+                    android:textSize="40dp"
+                    android:layout_alignLeft="@+id/endBtn"
+                    android:layout_alignTop="@+id/endBtn"
+                    android:layout_alignRight="@+id/endBtn"
+                    android:layout_alignBottom="@+id/endBtn"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

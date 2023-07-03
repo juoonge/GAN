@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/x"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/beforePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_b"
+                android:text="&lt; "
+                android:textSize="60dp"/>
+            <TextView
+                android:id="@+id/currentPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:text="1"
+                android:textSize="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:text="/"
+                android:textSize="50dp"/>
+            <TextView
+                android:id="@+id/allPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_l"
+                android:text="1"
+                android:textSize="50dp"/>
+            <TextView
+                android:id="@+id/nextPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typo_crayon_b"
+                android:text=" &gt;"
+                android:textSize="60dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/beforePageBtn"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:alpha="0"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/nextPageBtn"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:alpha="0"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/sentence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/typo_crayon_l"
+            android:textSize="38dp"
+            android:maxWidth="750dp"
+            android:layout_marginTop="50dp"
+            android:maxLines="3"
+            android:background="@null"/>
+        <ImageButton
+            android:id="@+id/sentenceSpeakerBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/speaker"
+            android:layout_toRightOf="@+id/sentence"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="80555-arrow-down.json"
+            app:lottie_loop="true"
+           android:layout_below="@+id/sentence"
+            android:layout_centerHorizontal="true"
+            app:lottie_speed="0.5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="터치하여 내용을 수정해보세요!"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/typo_crayon_l"
+            android:layout_below="@+id/lottie_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="26dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                tools:ignore="MissingClass"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/returnImage"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/return_image_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="그림\n원래대로"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/typo_crayon_l"
+                    android:textSize="20dp"
+                    android:layout_alignLeft="@+id/returnImage"
+                    android:layout_alignTop="@+id/returnImage"
+                    android:layout_alignRight="@+id/returnImage"
+                    android:layout_alignBottom="@+id/returnImage"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/newImageBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="MissingClass"
+                    app:lottie_fileName="refresh.json"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="false"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+                <ImageButton
+                    android:id="@+id/changeContentBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/return_content_btn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="전체 저장"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/typo_crayon_l"
+                    android:textSize="20dp"
+                    android:layout_alignLeft="@+id/changeContentBtn"
+                    android:layout_alignTop="@+id/changeContentBtn"
+                    android:layout_alignRight="@+id/changeContentBtn"
+                    android:layout_alignBottom="@+id/changeContentBtn"/>
+
+                <ImageButton
+                    android:id="@+id/returnContent"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/change_content_btn"
+                    android:layout_toLeftOf="@+id/changeContentBtn"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="내용\n원래대로"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/typo_crayon_l"
+                    android:textSize="20dp"
+                    android:layout_alignLeft="@+id/returnContent"
+                    android:layout_alignTop="@+id/returnContent"
+                    android:layout_alignRight="@+id/returnContent"
+                    android:layout_alignBottom="@+id/returnContent"/>
+            </RelativeLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/reRecord"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="95dp"
+                android:layout_marginRight="150dp"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="refresh.json"
+                app:lottie_loop="false"
+                tools:ignore="MissingClass" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/typo_crayon_l"
+                    android:text="00:00"
+                    android:textSize="60dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max 00:60:00"
+                    android:fontFamily="@font/typo_crayon_l"
+                    android:textSize="30dp"
+                    android:background="@null"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/record"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/record"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="MissingClass"
+                    app:lottie_fileName="record.json"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"/>
+            </LinearLayout>>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
